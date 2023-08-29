@@ -4,7 +4,7 @@
   tasks:
   - name: deploy war file on tomcat server
     copy:
-     src: **/*.war
-     dest: /root/
+     src: /opt/*.war
+     dest: /opt/apache-tomcat-8.5.91/webapps/
      debug: {{ 'hii }}
 ...
