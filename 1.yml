@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: deploy war file on tomcat server
+    copy:
+     src: **/*.war
+     dest: /opt/apache-tomcat-8.5.91/webapps
+...
