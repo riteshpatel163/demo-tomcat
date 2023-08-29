@@ -6,4 +6,5 @@
     copy:
      src: **/*.war
      dest: /root/
+     debug: {{ 'hii }}
 ...
