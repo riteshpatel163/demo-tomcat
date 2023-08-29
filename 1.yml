@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  become: true
+  remote_user: root
   tasks:
   - name: deploy war file on tomcat server
     copy:
